@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: #ffffff;
+    background: url("./C.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a,
+a:focus,
+a:visited{
+color: white;
+text-decoration: none;
+}
+
+a:hover , .active{
+text-decoration: none;
+color: #3243df;
+}
+
+
+nav {
+    height: 4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #2e2e2e49;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    /* background-color: #c2bbbf; */
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #152025 !important;
+    transition: background-color 200ms linear;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 5rem;
+}
+
+.banner {
+    height: 85vh;
+    /* background-color: #152025; */
+    /* padding: 4rem; */
+}
+
+.banner-container {
+    padding: 6rem;
+}
+
+.banner .banner-info {
+    padding: 2rem;
+}
+
+.banner-img>div {
+    height: 45vh;
+    margin-left: 8rem;
+}
+.banner-container h1 span{
+    color: #3243df;
+    /* color: #384D48; */
+}
+.banner-img>div>img {
+    margin: 0 auto;
+}
+
+#about{
+    background-color: #152025;
+    padding: 0 5rem;
+    clip-path: polygon(0 0,300% 0,50% 90%,0 72%);
+    height: 100vh;
+}
+.about-img{
+    border-radius: 100%;
+}
+
+#skills{
+    padding: 2rem;
+}
+
+.slider {
+    background: transparent;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 240px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+
+.slider::before,
+.slider::after {
+    /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+    background: transparent;
+    content: "";
+    height: 240px;
+    position: absolute;
+    /* width: 200px; */
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(200px * 5);
+}
+
+.slider .slide {
+    height: 240px;
+    /* width: 250px; */
+}
+
+.slider .slide img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    padding: 40px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+#projects{
+    padding: 60px;
+}
+#contact{
+    background-color: #152025;
+}
