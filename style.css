@@ -21,7 +21,7 @@ color: white;
 text-decoration: none;
 }
 
-a:hover , .active{
+a:hover , a.active{
 text-decoration: none;
 color: #3243df;
 }
@@ -163,4 +163,13 @@ nav {
 }
 #contact{
     background-color: #152025;
+}
+
+#contact input{
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+p{
+    padding: 5px 2px;
 }
